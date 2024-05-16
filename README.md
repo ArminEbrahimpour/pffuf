@@ -8,7 +8,7 @@ Parse fuzz faster u fool
 
 ## how to run ???
 #### u just need to clone this repo or copy the code manually 
-  git clone https://github.com/Bl00dBlu35/pffuf
+`git clone https://github.com/Bl00dBlu35/pffuf`
 #### if youre using linux do these 
   go build pffuf.go
   sudo mv pffuf /usr/local/bin
