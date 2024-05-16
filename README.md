@@ -18,3 +18,5 @@ Parse fuzz faster u fool
 ## how does the program work
 #### pffuf basically has one flag and it is `-f` which gets the path of the json file and make three directory based on http status code (302 for redirect, 403 for not allowed , 500 for server error endpoints)
 #### and in each directory it writes the endpoints with that status code 
+
+`pffuf -f ~/path/to/your/file.txt `
