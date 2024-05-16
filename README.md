@@ -10,8 +10,8 @@ Parse fuzz faster u fool
 #### u just need to clone this repo or copy the code manually 
 `git clone https://github.com/Bl00dBlu35/pffuf`
 #### if youre using linux do these 
-  `go build pffuf.go
-  sudo mv pffuf /usr/local/bin
+  `go build pffuf.go \n
+  sudo mv pffuf /usr/local/bin \n
   // enter your password`
 #### then you can run the tool where ever you want from terminal
 
