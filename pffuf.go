@@ -158,7 +158,7 @@ func RecoverFromPanic() {
 func createDir() {
 	defer RecoverFromPanic()
 
-	comm := exec.Command("mkdir", "302", "403", "500")
+	comm := exec.Command("mkdir", "200", "302", "403", "500")
 	err := comm.Run()
 	if err != nil {
 		panic("something went wrong")
@@ -182,6 +182,7 @@ func main() {
 	urls := make([]string, len(ffuf.Results))
 
 	// three slices for handling endpoints with different status code
+	ok := make([]string, 0)
 	redirects := make([]string, 0)
 	not_allowed := make([]string, 0)
 	server_error := make([]string, 0)
@@ -203,6 +204,8 @@ func main() {
 			not_allowed = append(not_allowed, u)
 		} else if status[i] == 501 || status[i] == 502 || status[i] == 500 {
 			server_error = append(server_error, u)
+		} else if status[i] == 200 {
+			ok = append(ok, u)
 		}
 	}
 	if !empty(redirects) {
@@ -213,5 +216,8 @@ func main() {
 	}
 	if !empty(server_error) {
 		writeInto("./500/endpoints.txt", server_error)
+	}
+	if !empty(ok) {
+		writeInto("./200/endpoints.txt", ok)
 	}
 }
