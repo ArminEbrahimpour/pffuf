@@ -1,8 +1,9 @@
 # pffuf
 Parse fuzz faster u fool
 ## description
-#### if you are using the [ffuf](https://github.com/ffuf/ffuf)  tool for fuzzing stuff you might use the json out put from it and well it is so confusing to work with a large json \n so in that case I wrote this tool 
-#### which I called it pffuf to parse the json out put form ffuf .
+#### if you are using the [ffuf](https://github.com/ffuf/ffuf)  tool for fuzzing stuff you might use the json out put from it and well it is so confusing to work with a large json 
+#### so in that case I wrote this tool 
+#### which I called it pffuf to parse the json output form ffuf .
 
 #### this is a basic tool which you can customize it easily and get parse different data out of the json 
 
