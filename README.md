@@ -1,5 +1,5 @@
 # pffuf
-Parse fuzz faster u fool
+Parse fuzz faster u fool(ffuf)
 ## description
 #### if you are using the [ffuf](https://github.com/ffuf/ffuf)  tool for fuzzing stuff you might use the json out put from it and well it is so confusing to work with a large json 
 #### so in that case I wrote this tool 
